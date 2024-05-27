@@ -140,7 +140,9 @@ friends.push(getRandom(animals));
 
 console.log(friends); 
 
-animals[0]["friends"] = friends;
+animals[0]["friends"] = [];
+
+animals[0]["friends"].push(friends);
 
 console.log(animals[0]);
 
