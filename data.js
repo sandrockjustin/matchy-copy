@@ -38,7 +38,9 @@ console.log(noises);
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-
+animal["noises"] = noises;
+animal["noises"].push("bleh");
+console.log(animal);
 
 /* *******************************************************************
  * Step 4 - Review
