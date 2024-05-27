@@ -140,6 +140,8 @@ friends.push(getRandom(animals)["name"]);
 
 console.log(friends); 
 
+animals[0]["friends"] = friends;
+
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
  * move onto Part 2 in the file called "functions.js"
