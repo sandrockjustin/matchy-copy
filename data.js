@@ -39,7 +39,8 @@ console.log(noises);
 //////////////////////////////////////////////////////////////////////
 
 animal["noises"] = noises;
-animal["noises"].push("bleh");
+// animal["noises"].push("bleh");
+animal["noises"][animal["noises"].length - 1] = "bleh";
 console.log(animal);
 
 /* *******************************************************************
@@ -70,6 +71,7 @@ console.log(animal["noises"][1]);
 //////////////////////////////////////////////////////////////////////
 
 var animals = []; // attention: this var is animals, and is not the same as the object variable animal
+
 animals.push(animal);
 
 console.log(animals);
@@ -118,7 +120,16 @@ console.log(animals.length);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var friends = [];
 
+/*
+
+An array was chosen for the friends collection, because this will make it easier to order friends
+by how compatibility. This will also make it easier to remove "friends" from the list if it is
+necessary in the future. If we had chosen an object list, containing objects, it would be difficult
+for us to easily modify the data contained.
+
+*/
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
