@@ -23,11 +23,11 @@ console.log(animal);
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-var noises = [];
-noises[0] = "meow";
-noises.push("brrrrt");
-noises.unshift("hiss");
-noises.push("muwao");
+var noises = []; // initialization of an empty array
+noises[0] = "meow"; // hard-coded "meow" at index 0 
+noises.push("brrrrt"); // soft-coded "brrrrt" to the end of the array using push()
+noises.unshift("hiss"); // soft-coded "hiss" to the front of the array using unshift()
+noises.push("muwao"); // soft-coded "muwao" to the end of the array using push()
 
 console.log(noises.length);
 console.log(noises[noises.length - 1]);
@@ -52,6 +52,10 @@ console.log(animal);
  * *******************************************************************
  */
 
+console.log(animal["name"]);
+console.log(animal["species"]);
+console.log(animal["noises"][1]);
+
 /* *******************************************************************
  * Step 5 - Take a Break!
  *
@@ -65,7 +69,50 @@ console.log(animal);
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var animals = []; // attention: this var is animals, and is not the same as the object variable animal
+animals.push(animal);
 
+console.log(animals);
+
+var duck = { 
+  species: 'duck', 
+  name: 'Jerome', 
+  noises: [
+    'quack', 
+    'honk', 
+    'sneeze', 
+    'woosh'
+  ] 
+}
+
+animals.push(duck);
+
+console.log(animals); 
+
+var dog = {
+  species: 'dog',
+  name: 'Julia',
+  noises: [
+    'bark', 
+    'woof',
+    'whine'
+  ]
+}
+
+var alligator = {
+  species: 'alligator',
+  name: 'Crocubot',
+  noises: [
+    'hiss',
+    'grumble'
+  ]
+}
+
+animals.push(dog);
+animals.push(alligator);
+
+console.log(animals);
+console.log(animals.length);
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
