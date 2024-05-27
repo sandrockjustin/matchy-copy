@@ -131,8 +131,8 @@ console.log(animals.length);
 var friends = [];
 
 function getRandom(animals){
-  console.log(animals[Math.random(animals.length - 1)]);
-  return animals[Math.random(animals.length - 1)];
+
+  return animals[Math.floor(Math.random() * animals.length - 1)];
 
 }
 
