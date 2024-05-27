@@ -40,7 +40,7 @@ console.log(noises);
 
 animal["noises"] = noises;
 // animal["noises"].push("bleh");
-animal["noises"][animal["noises"].length - 1] = "bleh";
+animal["noises"][animal["noises"].length] = "bleh";
 console.log(animal);
 
 /* *******************************************************************
