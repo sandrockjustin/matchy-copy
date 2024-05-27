@@ -132,11 +132,11 @@ var friends = [];
 
 function getRandom(animals){
 
-  return animals[Math.floor(Math.random() * (animals.length))]["name"];
+  return animals[Math.floor(Math.random() * (animals.length))];
 
 }
 
-friends.push(getRandom(animals));
+friends.push(animals[getRandom(animals)]["name"]);
 
 console.log(friends); 
 
