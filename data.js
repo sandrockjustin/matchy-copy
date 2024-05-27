@@ -39,8 +39,7 @@ console.log(noises);
 //////////////////////////////////////////////////////////////////////
 
 animal["noises"] = noises;
-// animal["noises"].push("bleh");
-animal["noises"][animal["noises"].length] = "bleh";
+animal["noises"].push("bleh");
 console.log(animal);
 
 /* *******************************************************************
@@ -120,16 +119,30 @@ console.log(animals.length);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/*
+*
+* An array was chosen for the friends collection, because this will make it easier to order friends
+* by how compatibility. This will also make it easier to remove "friends" from the list if it is
+* necessary in the future. If we had chosen an object list, containing objects, it would be difficult
+* for us to easily modify the data contained.
+*
+*/
+
 var friends = [];
 
-/*
+function getRandom(animals){
 
-An array was chosen for the friends collection, because this will make it easier to order friends
-by how compatibility. This will also make it easier to remove "friends" from the list if it is
-necessary in the future. If we had chosen an object list, containing objects, it would be difficult
-for us to easily modify the data contained.
+  return animals[Math.random()];
 
-*/
+}
+
+friends.push(getRandom(animals));
+
+console.log(friends); 
+
+animals[0]["friends"] = friends;
+
+console.log(animals[0]);
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
