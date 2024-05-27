@@ -136,7 +136,7 @@ function getRandom(animals){
 
 }
 
-friends.push(animals[getRandom(animals)]["name"]);
+friends.push(getRandom(animals)["name"]);
 
 console.log(friends); 
 
