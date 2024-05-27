@@ -132,7 +132,7 @@ var friends = [];
 
 function getRandom(animals){
 
-  return animals[Math.random()];
+  return animals[Math.random(animals.length - 1)];
 
 }
 
