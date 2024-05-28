@@ -33,7 +33,7 @@ function search(animals, stringArg){
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
-function replace(animals, name, replacement){
+function replace(animals, stringArg, replacement){
 
     for (let i = 0; i < animals.length; i++){
 
