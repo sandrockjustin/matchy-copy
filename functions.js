@@ -15,6 +15,7 @@
 
 function search(animals, stringArg){
 
+    // starting at 0, loop over every index of the array animals and inspect the object key "name" to see if it matches stringArg
     for (let i = 0; i < animals.length; i++){
 
         if (animals[i]["name"] === stringArg){
@@ -25,7 +26,8 @@ function search(animals, stringArg){
       
     }
   
-  return null;
+    // return statement must be outside of For Loop or the code will not execute properly
+    return null;
 
 }
 
@@ -35,11 +37,13 @@ function search(animals, stringArg){
 
 function replace(animals, stringArg, replacement){
 
+    // same code logic from the search() function
     for (let i = 0; i < animals.length; i++){
 
+        // checking if they key "name" of object at the index of i (in array of animals) is equal to stringArg
         if (animals[i]["name"] === stringArg){
 
-            animals[i] = replacement;
+            animals[i] = replacement; // attempted to use splice method but realized this was easier
 
         }
       
@@ -53,10 +57,13 @@ function replace(animals, stringArg, replacement){
 
 function remove(animals, stringArg){
 
+    // same code logic from the search() function
     for (let i = 0; i < animals.length; i++){
 
         if (animals[i]["name"] === stringArg){
 
+            // the splice() method is being use to delete the current index
+            // the "delete" statement should not be used as the current index will remain with a value of undefined
             animals.splice(i, 1);
 
         }
@@ -72,10 +79,13 @@ function remove(animals, stringArg){
 
 function add(animals, animal){
 
+    // checks to see if the keys "name" and "species" are both greater than 0 in character length
     if (animal["name"].length > 0 && animal["species"].length > 0){
 
+        // important that the object[key] is passed through here, and not the object
         if (search(animals, animal["name"]) === null) {
 
+            //adds new animal object to the end of the animals array (argument)
             animals.push(animal);
 
         }
