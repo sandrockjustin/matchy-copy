@@ -74,7 +74,7 @@ function add(animals, animal){
 
     if (animal["name"].length > 0 && animal["species"].length > 0){
 
-        if (search(animals, animal) === null) {
+        if (search(animals, animal["name"]) === null) {
 
             animals.push(animal);
 
