@@ -15,7 +15,7 @@
 
 function search(animals, stringArg){
 
-    for (let i = 0; i < animals.length; i++){
+    for (var i = 0; i < animals.length; i++){
 
         if (animals[i]["name"] === stringArg){
 
