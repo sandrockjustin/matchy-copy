@@ -70,7 +70,15 @@ function remove(animals, stringArg){
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+function add(animals, animal){
 
+    if (animal["name"].length > 0 && animal["species"].length > 0 && (search(animals, animal) === null)){
+
+        animals.push(animal);
+
+    }
+
+}
 
 /**
  * You did it! You're all done with Matchy!
