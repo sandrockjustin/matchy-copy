@@ -15,16 +15,17 @@
 
 function search(animals, stringArg){
 
-    for (var i = 0; i < animals.length; i++){
+    for (let i = 0; i < animals.length; i++){
 
         if (animals[i]["name"] === stringArg){
 
             return animals[i];
 
         }
-
-        return null;
+      
     }
+  
+  return null;
 
 }
 
