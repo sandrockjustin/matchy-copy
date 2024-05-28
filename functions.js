@@ -72,9 +72,13 @@ function remove(animals, stringArg){
 
 function add(animals, animal){
 
-    if (animal["name"].length > 0 && animal["species"].length > 0 && (search(animals, animal) === null)){
+    if (animal["name"].length > 0 && animal["species"].length > 0){
 
-        animals.push(animal);
+        if (search(animals, animal) === null) {
+
+            animals.push(animal);
+
+        }
 
     }
 
