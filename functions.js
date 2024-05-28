@@ -51,6 +51,19 @@ function replace(animals, stringArg, replacement){
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+function remove(animals, stringArg){
+
+    for (let i = 0; i < animals.length; i++){
+
+        if (animals[i]["name"] === stringArg){
+
+            animals.splice(i, 1);
+
+        }
+      
+    }  
+
+}
 
 
 //////////////////////////////////////////////////////////////////////
