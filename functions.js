@@ -39,7 +39,7 @@ function replace(animals, name, replacement){
 
         if (animals[i]["name"] === stringArg){
 
-            animals[i].splice(i, 1, replacement);
+            animals[i] = replacement;
 
         }
       
